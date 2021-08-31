@@ -6,6 +6,7 @@ const parent = document.getElementById('box');
 
 // event to submit Button
 btn.addEventListener('click',() => {
+    if(firstInput.value && secondInput.value && thirdInput.value){
 let btn = document.getElementById('btn');
 // removing all things after clicking button to add New elements.
 parent.removeChild(firstInput);
@@ -87,4 +88,7 @@ parent.removeChild(btn);
             
         }
 }
+    }else{
+        alert('All feilds are mandatory')
+    }
 }) 
